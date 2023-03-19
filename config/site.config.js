@@ -44,6 +44,19 @@ module.exports = {
   // the directories in which you have .password set. Check the documentation for details.
   protectedRoutes: ['/🌞 Private folder/u-need-a-password', '/🥟 Some test files/Protected route'],
 
+    // [OPTIONAL] Use "" here if you want to remove this email address from the nav bar.
+  email: 'mailto:poik9@live.com',
+
+  // [OPTIONAL] This is an array of names and links for setting your social information and links.
+  // In the latest update, all brand icons inside font awesome is supported and the icon to render is based on the name
+  // you provide. See the documentation for details.
+  links: [
+    {
+      name: 'telegram',
+      link: 'https://bigbig.vip',
+    },
+  ],
+  
   // This is a day.js-style datetime format string to format datetimes in the app. Ref to
   // https://day.js.org/docs/en/display/format for detailed specification. The default value is ISO 8601 full datetime
   // without timezone and replacing T with space.
