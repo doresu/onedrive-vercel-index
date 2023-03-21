@@ -13,17 +13,24 @@ class MyDocument extends Document {
           {siteConfig.googleFontLinks.map(link => (
             <link key={link} rel="stylesheet" href={link} />
           ))}
-        
-                              <script async src="https://www.googletagmanager.com/gtag/js?id=G-547B8LWE66"></script>
-                    <script dangerouslySetInnerHTML={{
-                        __html:`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                      
-                        gtag('config', 'G-547B8LWE66');
-                        `,                        
-                    }} />
+        <div className="container">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-547B8LWE66"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-547B8LWE66');
+        `}
+      </Script>
+    </div>
+  )
+}
           <script
    async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
