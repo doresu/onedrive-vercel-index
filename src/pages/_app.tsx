@@ -123,7 +123,7 @@ return (
     <>
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=XXXXXXXXXX`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-547B8LWE66`}
       />
 
       <Script strategy="lazyOnload">
