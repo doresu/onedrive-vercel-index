@@ -134,25 +134,6 @@ library.add(
   return <Component {...pageProps} />
 }
 
-  <>
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-547B8LWE66`}
-      />
-
-      <Script strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-547B8LWE66');
-        `}
-      </Script>
-
-      <Component {...pageProps} />
-    </>
-  );
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
