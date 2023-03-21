@@ -13,7 +13,18 @@ class MyDocument extends Document {
           {siteConfig.googleFontLinks.map(link => (
             <link key={link} rel="stylesheet" href={link} />
           ))}
-        <script
+        
+                              <script async src="https://www.googletagmanager.com/gtag/js?id=G-547B8LWE66"></script>
+                    <script dangerouslySetInnerHTML={{
+                        __html:`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                      
+                        gtag('config', 'G-547B8LWE66');
+                        `,                        
+                    }} />
+          <script
    async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
  />
