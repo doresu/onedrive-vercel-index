@@ -119,8 +119,7 @@ library.add(
   ...iconList
 )
 
-return (
-    <>
+<>
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-547B8LWE66`}
