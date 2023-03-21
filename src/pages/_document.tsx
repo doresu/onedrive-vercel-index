@@ -13,8 +13,20 @@ class MyDocument extends Document {
           {siteConfig.googleFontLinks.map(link => (
             <link key={link} rel="stylesheet" href={link} />
           ))}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5843859428103999"
-     crossorigin="anonymous"></script>
+        <script
+   async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+ />
+ <script
+          dangerouslySetInnerHTML={{
+            __html: `
+               (adsbygoogle = window.adsbygoogle || []).push({
+                   google_ad_client: "ca-pub-5843859428103999",
+                   enable_page_level_ads: true
+              });
+                `
+          }}
+ />
         </Head>
         <body>
           <Main />
