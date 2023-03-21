@@ -119,22 +119,6 @@ library.add(
   ...iconList
 )
 
-  useEffect(() => {
-    const handleRouteChange = url => {
-      window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
-        page_path: url,
-      })
-    }
-    router.events.on('routeChangeComplete', handleRouteChange)
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
-
-  return <Component {...pageProps} />
-}
-
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
